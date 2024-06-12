@@ -49,7 +49,7 @@ const HeroSection = () => {
               marginTop: { xs: 0, sm: "30px" },
             }}
           >
-            D4D Hub(Developers for Developers)
+            D4D Hub(Connecting Developers Globally)
           </Typography>
           <p>
             The only place to collab with coders,showcase your projects,show off
