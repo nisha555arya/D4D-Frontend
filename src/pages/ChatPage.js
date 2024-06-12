@@ -23,7 +23,7 @@ const ChatPage = (props) => {
   const { userInfo } = useSelector((state) => state.userLogin);
   const socket = useRef();
   useEffect(() => {
-    socket.current = io("https://socketserver-io.onrender.com");
+    socket.current = io("https://d4d-socket.onrender.com");
     props.socketHandler(socket.current);
   }, []);
 
