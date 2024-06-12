@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+@import "~react-image-gallery/styles/css/image-gallery.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Belleza", sans-serif !important;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+main {
+  height: 100%;
+  min-height: 75vh;
+}
+a {
+  text-decoration: none !important;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles > div {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  background: #4cacbc;
+  z-index: -1;
+}
+.circles div:nth-child(1) {
+  left: -3%;
+  top: -5%;
+  width: 100px;
+  height: 100px;
+}
+
+.circles div:nth-child(2) {
+  right: 3%;
+  top: 5%;
+  width: 150px;
+  height: 150px;
+}
+.circles div:nth-child(3) {
+  left: -3%;
+  bottom: -5%;
+  width: 80px;
+  height: 80px;
+}
+.circles div:nth-child(4) {
+  right: -3%;
+  bottom: -8%;
+  width: 100px;
+  height: 100px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 12px;
+  border: 6px solid #fff;
+  min-height: 15px;
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media (min-width: 1400px) {
+  .MuiContainer-root {
+    max-width: 1400px !important;
+  }
+}
+/*--------------carasoul------*/
+.image-gallery-slide .image-gallery-image {
+  width: 100%;
+  object-fit: cover;
+}
+/*-------loader-----*/
+.loading-container {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4cacbc;
+  border-radius: 50%;
+  animation: spinner 1s infinite linear;
+  border-bottom: none;
+  margin: 0 auto;
+}
+.navlinks {
+  color: #888;
+  font-size: 17px;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+.navlinks:hover {
+  color: #4cacbc;
+  border-bottom: 2px solid #4cacbc;
+}
+/* .MuiFormLabel-root#keyword-select-label,
+.MuiFormLabel-root#tech-select-label {
+  padding-left: 15px;
+}
+.MuiInputBase-root {
+  margin: 0 15px;
+
+/*------------card css-----------------*/
+
+.MuiCardHeader-title {
+  font-size: 18px !important;
+  /*text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 200px;
+  padding-right: 20px !important; */
+  white-space: nowrap;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+}
+.MuiCardHeader-subheader {
+  font-weight: 600 !important;
+  opacity: 0.8;
+}
+.MuiCardHeader-avatar {
+  font-weight: 700 !important;
+}
+.MuiCardContent-root {
+  padding: 8px !important;
+}
+/*----------Collection card Delete Functionality---------*/
+/* .project-functionality {
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  gap: 10px;
+  display: none;
+}
+.project-functionality .btn {
+  border-radius: 50% !important;
+  color: #000 !important;
+  background: #fff !important;
+  padding: 0.3rem 0.5rem;
+}
+.project-functionality .btn i {
+  font-size: 15px;
+  margin: 0 auto;
+}
+.navlinks {
+  color: #888;
+  font-size: 17px;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+.navlinks:hover {
+  color: #4cacbc;
+  border-bottom: 2px solid #4cacbc;
+}
+/* .MuiFormLabel-root#keyword-select-label,
+.MuiFormLabel-root#tech-select-label {
+  padding-left: 15px;
+}
+.project-functionality .btn:hover {
+  background-color: #f33c3c !important;
+  color: #fff !important;
+} */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4cacbc;
+  border-radius: 50%;
+  animation: spinner 1s infinite linear;
+  border-bottom: none;
+  margin: 0 auto;
+}
+.navlinks {
+  color: #888;
+  font-size: 17px;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+.navlinks:hover {
+  color: #4cacbc;
+  border-bottom: 2px solid #4cacbc;
+}
+
+.searchBtn:hover,
+.btn:hover {
+  background-color: #4cacbc !important;
+}
+/*------------Grid----------*/
+.css-skq1si-MuiGrid-root {
+  width: 100% !important;
+  margin-left: 0px !important;
+}
+@media (min-width: 420px) {
+  .css-skq1si-MuiGrid-root > .MuiGrid-item {
+    padding-left: 0;
+  }
+}
+
+/*-----------------------Chat page------------------------------*/
+/* .searchInput {
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 20px;
+  margin: 20px;
+  width: 300px;
+  font-size: 15px;
+  font-weight: 600;
+} */
+.searchInput fieldset,
+.chatInput fieldset {
+  border: none;
+}
+
+/*----image gallery css----------*/
+.image-gallery-image {
+  max-height: 250px !important;
+}
+/*---------Project Card--------*/
+.css-11c9abr-MuiCardMedia-root div {
+  height: 134px !important;
+}
+/*----------------Thumnail Picture-----------*/
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+  height: 60px !important;
+  object-fit: fill;
+}
