@@ -8,35 +8,7 @@ User can chat with other developers.Save and share their profiles
 
 Live link: <a href="https://d4d-developers-hub.netlify.app/" target="_blank"> Click here</a>
 
----
 
-<img src="public/img/HomePage.png">
-
----
-
-<img src="public/img/EntireHome.png">
-
----
-
-<img src="public/img/Profile.png">
-
----
-
-<img src="public/img/ProjectDetails.png">
-
----
-
-<img src="public/img/ChatPage.png">
-
----
-
-<img src="public/img/SearchProjects.png">
-
----
-
-<img src="public/img/SearchUser.png">
-
----
 
 ## Main Technologies
 
