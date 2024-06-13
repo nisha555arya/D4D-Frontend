@@ -1,4 +1,4 @@
-# D4D Developers for Developers Hub
+# D4D Connecting Developers Globally
 
 A platform for developers to connect. They can create their portofolio by adding their experience, education, skills and other important information of their professional career.
 
