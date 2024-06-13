@@ -149,17 +149,20 @@ const Header = () => {
                       Edit Profile
                     </Typography>
                   </MenuItem>
-                  <MenuItem
-                    onClick={() => {
+
+                  {/* <MenuItem
+                    onClick=
+                    {() => {
                       handleCloseUserMenu();
                       navigate("/collections");
                     }}
-                  >
+                    >
                     <Bookmarks />
                     <Typography textAlign="center" sx={{ marginLeft: "5px" }}>
                       Collections
                     </Typography>
-                  </MenuItem>
+                  </MenuItem> */}
+
                   <MenuItem
                     onClick={() => {
                       handleCloseUserMenu();
